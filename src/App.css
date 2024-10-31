@@ -1,18 +1,28 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;  /* General font */
-  color: #333;
-  background-color: #ffffff;
-}
-
 .App {
-  height: 100vh;  /* Full viewport height */
   display: flex;
-  flex-direction: column;  /* Vertical layout */
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-weight: 200;
+  color: rgb(51, 51, 51);
 }
 
-main {
-  padding: 20px 10vw;  /* Adds padding around the content */
-  flex: 1;  /* Main section takes up available space */
-  overflow-y: auto;  /* Enables vertical scrolling */
+.left-panel {
+  width: 300px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 20px; /* Reduced padding for left alignment */
+  overflow-y: auto;
+}
+
+.right-panel {
+  margin-left: 320px; /* Space to the right of the left panel */
+  padding: 20px 30px;
+  width: calc(100% - 320px);
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.right-panel > div {
+  margin-bottom: 40px;
 }

@@ -1,0 +1,57 @@
+.blog {
+  margin-bottom: 50px; /* Space below the section */
+  padding-left: 20px; /* Creates space for the vertical line */
+  position: relative; /* Required for the ::before pseudo-element */
+}
+
+.blog h2 {
+  font-size: 2rem; /* Font size for section headers */
+  font-weight: 200; /* Consistent thin font weight */
+  margin-bottom: 10px; /* Space below the header */
+  cursor: pointer; /* Pointer cursor to indicate clickability */
+  transition: color 0.1s, background-color 0.1s; /* Smooth transition for hover effects */
+}
+
+.blog h2:hover {
+  color: #818181; /* Light gray color on hover */
+}
+
+.blog .details {
+  padding-left: 20px; /* Indent details */
+}
+
+.blog .details p {
+  font-size: 1.2rem; /* Font size for detail paragraphs */
+  font-weight: 200; /* Thin font for details */
+  color: #818181; /* Consistent light gray text */
+  margin-bottom: 5px; /* Space between paragraphs */
+  padding-left: 40px; /* Indent details */
+
+}
+
+.blog .majors p {
+  font-size: 1.1rem; /* Font size for majors */
+  font-weight: 200; /* Thin font weight */
+  color: #606060; /* Darker gray for more distinction */
+  margin-bottom: 5px; /* Space between majors */
+  
+}
+
+/* Add vertical line on the left of the blog section */
+.blog::before {
+  content: "";
+  position: absolute;
+  top: 5px; /* Align with the h2 */
+  bottom: 0; /* Make the line go all the way down */
+  left: 0; /* Position the line to the left */
+  width: 0.5px;
+  background-color: #818181; /* Color of the line */
+}
+
+.clickable {
+  transition: color 0.3s ease; /* Smooth transition when clicking */
+}
+
+.clickable:hover {
+  color: #000000; /* Darker color when hovered */
+}

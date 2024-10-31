@@ -1,22 +1,35 @@
-header {
-    position: relative; /* Not fixed, but positioned with padding */
-    margin-bottom: 50px; /* Space below the header */
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 3.5rem;
-    font-weight: 200;
-    color: #000000;
-    padding-top: 200px;  /* Adds vertical space above the name */
-    padding-left: 200px; /* Adds space from the left side */
-  }
-  
-  header h2 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 200;
-    color: #aaaaaa;
-    padding-left: 200px; /* Aligns location text to the left */
-  }
-  
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  padding-left: 150px;
+  margin-bottom: 150px;
+  text-align: left; /* Center-align content */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 100;
+  color: #000000;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: #818181;
+  margin-bottom: 10px; /* Space below h2 */
+}
+
+.header p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #818181;
+  max-width: 400px; /* Limit paragraph width for readability */
+  line-height: 1.4;
+  padding-left: 0px;
+  margin: 0 auto; /* Center the paragraph if needed */
+}
+

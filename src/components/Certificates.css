@@ -1,0 +1,37 @@
+.certificates .certificate-header {
+    font-size: 1.4rem; /* Smaller font size for subheader within Skills */
+    font-weight: 200; /* Consistent thin font weight */
+    color: #606060; /* Dark gray to match other text within Skills */
+    margin-top: 20px; /* Space above Certificates section */
+    margin-bottom: 8px; /* Space below the header */
+    cursor: pointer; /* Pointer cursor to indicate clickability */
+    transition: color 0.1s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .certificates .certificate-header:hover {
+    color: #818181; /* Slightly lighter on hover */
+  }
+  
+  .certificate-details {
+    padding-left: 20px; /* Indent for certificate details */
+  }
+  
+  .certificate-details p {
+    font-size: 1.1rem; /* Slightly smaller font size for certificate items */
+    line-height: 1.3; /* Line spacing for readability */
+    font-weight: 200; /* Thin font weight */
+    color: #818181; /* Light gray color for consistency */
+    margin-bottom: 5px; /* Space between paragraphs */
+  }
+  
+  /* Link styling */
+  .certificate-details a {
+    color: #818181; /* Link color matching text */
+    text-decoration: none; /* No underline */
+    transition: color 0.1s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .certificate-details a:hover {
+    color: #606060; /* Darker gray on hover */
+  }
+  
