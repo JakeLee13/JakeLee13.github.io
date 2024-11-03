@@ -16,9 +16,9 @@ const Skills = () => {
       {showSkills && (
         <div className="skills-details">
           <ul>
-            <li><strong>Programming Languages:</strong> Python, MySQL, R, JavaScript, HTML, CSS, LaTeX</li>
-            <li><strong>Libraries/Frameworks:</strong> Pandas, NumPy, Statsmodels, Scikit-Learn, PyTorch, Seaborn, Plotly, Matplotlib, React</li>
-            <li><strong>Technologies:</strong> Domo, Excel, Tableau, Power BI, Jupyter</li>
+            <li><strong>Programming Languages:</strong> <li>Python, MySQL, R, JavaScript, HTML, CSS, LaTeX</li></li>
+            <li><strong>Libraries/Frameworks:</strong> <li>Pandas, NumPy, Statsmodels, Scikit-Learn, PyTorch, Seaborn, Plotly, Matplotlib, React</li></li>
+            <li><strong>Technologies:</strong> <li>Domo, Excel, Tableau, Power BI, Jupyter</li></li>
           </ul>
 
           <div className="certificates">

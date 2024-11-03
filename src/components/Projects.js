@@ -15,24 +15,30 @@ const Projects = () => {
 
   const projectData = [
     {
-      title: 'Machine Learning [Links in Progress]',
-      description: 'ML From Scratch',
+      title: 'Machine Learning and Deep Learning',
+      links: []
     },
+    
     {
-      title: 'Deep Learning [Links in Progress]',
-      description: 'D2L Implementations',
-    },
-    {
-      title: 'Probability and Statistics [Links in Progress]',
-      description: 'Simulations, Bayesian, Distributions',
+      title: 'Probability, Statistics, and Combinatorics',
+      links: [
+        {
+          href: 'https://nbviewer.org/github/JakeLee13/Monty-Hall-Problem-Simulation/blob/main/Monty%20Hall%20Project%20%282%29.ipynb',
+          label: 'Monty Hall Problem: Bayesian Updating and Analytical Thinking'
+        },
+        {
+          href: 'https://nbviewer.org/github/JakeLee13/Birthday-Problem/blob/main/Birthday%20Paradox.ipynb',
+          label: 'Birthday Paradox: Combinatorial Probability and Simulations'
+        }
+      ]
     },
     {
       title: 'Linear Algebra [Links in Progress]',
-      description: 'SVD, PCA, Compression',
+      links: []
     },
     {
       title: 'Other [Links in Progress]',
-      description: 'Details about Other projects...',
+      links: []
     },
   ];
 
@@ -48,7 +54,22 @@ const Projects = () => {
               <h3 onClick={() => handleTopicToggle(project.title)} className="clickable">
                 {project.title}
               </h3>
-              {activeTopic === project.title && <p>{project.description}</p>}
+              {activeTopic === project.title && project.links.length > 0 && (
+                <ul>
+                  {project.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
